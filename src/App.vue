@@ -14,7 +14,7 @@
             <div id="subtitle" class="headline text-xs-center">A modern responsive front-end framework based on Material Design</div>
           </v-flex>
           <v-flex xs12 class="mt-3">
-            <v-btn light large class="orange white--text">Get Started</v-btn>
+            <v-btn light large class="orange white--text" href="https://github.com/vwxyzjn/vuetify-landing-starter">Source Code</v-btn>
           </v-flex>
         </v-layout>
         
@@ -73,18 +73,18 @@
         </v-layout>
       </section>
       <div id="footer" class="orange darken-1 mt-5">
-        <v-layout row wrap style="width:70%;margin:auto" class="my-5">
+        <v-layout row wrap id="footer-layout" class="my-3">
           <v-flex xs12 sm6>
-            <div class="headline white--text">Company Bio</div>
-            <div class="white--text mt-3">
+            <div class="headline white--text ml-3">Company Bio</div>
+            <div class="white--text my-3 ml-3">
               We are a team of college students working on this project like 
               it's our full time job. Any amount would help support and continue 
               development on this project and is greatly appreciated.
             </div>
           </v-flex>
           <v-flex xs12 sm3>
-            <div class="headline white--text">Settings</div>
-            <div class="white--text mt-3">
+            <div class="headline white--text ml-3">Settings</div>
+            <div class="white--text my-3 ml-3">
               <a>Link1</a> <br>
               <a>Link2</a> <br>
               <a>Link3</a> <br>
@@ -92,8 +92,8 @@
             </div>
           </v-flex>
           <v-flex xs12 sm3>
-            <div class="headline white--text">Connect</div>
-            <div class="white--text mt-3">
+            <div class="headline white--text ml-3">Connect</div>
+            <div class="white--text my-3 ml-3">
               <a>Link1</a> <br>
               <a>Link2</a> <br>
               <a>Link3</a> <br>
@@ -103,9 +103,9 @@
         </v-layout>
       </div>
       <footer class="orange darken-2">
-        <v-layout row wrap style="width:70%;margin:auto" class="my-2">
+        <v-layout row wrap id="footer-layout" class="my-2">
           <v-flex xs12>
-            <div class="white--text">
+            <div class="white--text ml-3">
               Made by Costa Huang
             </div>
           </v-flex>
@@ -130,27 +130,39 @@
 </style>
 
 <style>
+
+@media (min-width: 800px) {
+  .toolbar__title {
+    margin-left: 15%;
+  }
+  #content {
+    width: 70%;
+    margin: auto;
+  }
+  #footer-layout {
+    width:70%!important;
+    margin:auto;
+  }
+}
+
+#footer-layout {
+  width: 100%;
+}
+
 #subtitle {
   font-weight: 200!important;
 }
 
-#content {
-  width: 70%;
-  margin: auto;
-}
 
 #footer {
   overflow: auto;
 }
-
 .card {
   background-color: #fafafa!important;
 }
-
 footer {
   overflow: auto;
 }
-
 a {
   color: #fff;
 }
